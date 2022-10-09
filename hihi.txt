@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class hihi{
+ private static Scanner input;
+ public static void main(String[]args){
+int a,n,jml_nil=0;
+double nil_rata=0;
+int[]nilai;
+nilai=new int[10];
+ 
+ input=new Scanner(System.in);
+ System.out.print("Masukkan banyak data =  ");
+ n=input.nextInt();
+System.out.println(" ");
+for(a=0;a<n;a++){
+System.out.print("Masukkan array ke"+a+"=");
+nilai[a]=input.nextInt();}
+ 
+ System.out.println("\n\nData yang diinputkan ke elemen array\n");
+ for(a=0;a<n;a++){
+ System.out.print("\nNilai ke - "+a);
+ System.out.print("="+nilai[a]);
+ jml_nil=jml_nil+nilai[a];
+}
+nil_rata=jml_nil/n;
+System.out.println("\n----------------");
+System.out.println("Jumlah array nilai "+jml_nil);
+System.out.println("Nilai rata-rata array nilai ="+nil_rata);
+}
+}
